@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets the character encoding for the document. UTF-8 supports a wide range of characters. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the page scales properly on different devices. -->
+    <title>calculator</title> <!-- Sets the title that appears in the browser tab. -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Links the external stylesheet (style.css) for styling the calculator. -->
+</head>
+
+<body>
+    <div class="container">
+        <!-- Main container to hold all the calculator elements. Think of it like the calculator's body. -->
+        <div class="screen"> <!-- The screen area where the input and results are displayed. -->
+            <input type="text" id="result" placeholder="0">
+            <!-- The input field itself, showing the numbers and results.  The placeholder shows "0" when it's empty. -->
+        </div>
+        <div class="rows-1 general"> <!-- Container for the first row of buttons (1, 2, 3, +). -->
+            <button class="btn">1</button> <!-- Button for the number 1 -->
+            <button class="btn">2</button> <!-- Button for the number 2 -->
+            <button class="btn">3</button> <!-- Button for the number 3 -->
+            <button class="btn">+</button> <!-- Button for the plus operator -->
+        </div>
+        <div class="rows-2 general"> <!-- Container for the second row of buttons (4, 5, 6, -). -->
+            <button class="btn">4</button> <!-- Button for the number 4 -->
+            <button class="btn">5</button> <!-- Button for the number 5 -->
+            <button class="btn">6</button> <!-- Button for the number 6 -->
+            <button class="btn">-</button> <!-- Button for the minus operator -->
+        </div>
+        <div class="rows-3 general"> <!-- Container for the third row of buttons (7, 8, 9, *). -->
+            <button class="btn">7</button> <!-- Button for the number 7 -->
+            <button class="btn">8</button> <!-- Button for the number 8 -->
+            <button class="btn">9</button> <!-- Button for the number 9 -->
+            <button class="btn">*</button> <!-- Button for the multiplication operator -->
+        </div>
+        <div class="rows-4 general"> <!-- Container for the fourth row of buttons (0, =, ., /). -->
+            <button class="btn">0</button> <!-- Button for the number 0 -->
+            <button class="btn">=</button> <!-- Button for the equals sign (to calculate the result) -->
+            <button class="btn">.</button> <!-- Button for the decimal point -->
+            <button class="btn">/</button> <!-- Button for the division operator -->
+        </div>
+        <div class="rows-5 general"> <!-- Container for the fifth row of buttons (C, AC, DEL). -->
+            <button class="btn">C</button> <!-- Clear button (C) - Clears the last entry. -->
+            <!-- <button class="btn">AC</button> All Clear button (AC) - Clears the entire screen. -->
+            <button class="btn">DEL</button> <!-- Delete button - Deletes the last digit entered. -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Links the external JavaScript file (script.js) that contains the calculator's logic. -->
+</body>
+
+</html>

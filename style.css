@@ -1,0 +1,130 @@
+/* Resets global styles to avoid default browser inconsistencies. */
+* {
+    margin: 0px;
+    /* Removes default margins from all elements. */
+    padding: 0px;
+    /* Removes default padding from all elements. */
+}
+
+/* Styles the body element. */
+body {
+    display: flex;
+    /* Enables flexbox layout for the body. */
+    justify-content: center;
+    /* Horizontally centers the content within the body. */
+    align-items: center;
+    /* Vertically centers the content within the body. */
+    height: 100vh;
+    /* Sets the body height to 100% of the viewport height. */
+    background-color: rgb(67, 65, 65);
+    /* Sets the background color of the body to a dark gray. */
+}
+
+/* Styles the main container of the calculator. */
+.container {
+    display: flex;
+    /* Enables flexbox layout for the container. */
+    flex-direction: column;
+    /* Arranges items vertically within the container. */
+    align-items: center;
+    /* Centers items horizontally within the container. */
+    width: 200px;
+    /* Sets the width of the container. */
+    height: 260px;
+    /* Sets the height of the container. */
+    margin: auto;
+    /* Centers the container on the page. */
+    border: 10px solid rgb(42, 108, 110);
+    /* Adds a solid border around the container. */
+    border-radius: 10px;
+    /* Rounds the corners of the container. */
+    background-color: rgb(48, 179, 194);
+    /* Sets background color of the container */
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
+    /* Adds a subtle shadow to the container. */
+}
+
+/* Styles the calculator's screen. */
+.screen {
+    width: 100%;
+    /* Sets screen width to fill container */
+
+}
+
+/* Styles the input field (screen) of the calculator. */
+input {
+    width: 95%;
+    /* Sets the width of the input field. */
+    height: 2.5em;
+    /* Sets the height of the input field relative to its font size. */
+    margin: 2px;
+    /* Adds a small margin around the input field. */
+    padding: 2px;
+    /* Adds some padding inside the input field. */
+    border: 1px solid black;
+    /* Adds a black border to the input field. */
+    border-radius: 5px;
+    /* Rounds the corners of the input field. */
+    background-color: cornflowerblue;
+    /* Sets the background color of the input field */
+    color: black;
+    /* Makes text in input field black */
+    font-size: 20px;
+    /* Sets the font size of the input text. */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    /* Adds a subtle shadow to the input field. */
+    text-align: right;
+    /* Aligns text inside the input to the right */
+    direction: ltr;
+    /* Ensures text flows left-to-right. */
+}
+
+
+/* Styles for the button rows (.general classes) */
+.general {
+    display: flex;
+    /* Enables flexbox for button rows. */
+    flex-direction: row;
+    /* Arranges buttons horizontally in a row. */
+    justify-content: space-between;
+    /* Distributes space evenly between buttons. */
+    align-items: center;
+    /* Vertically centers the buttons within the row. */
+}
+
+/* Style the buttons. */
+.btn {
+    margin: 5px;
+    /* Adds margin around each button. */
+    padding: 5px;
+    /* Adds padding inside each button. */
+    width: 40px;
+    /* Sets the width of the buttons. */
+    height: 30px;
+    /* Sets the height of the buttons. */
+    font-size: 1em;
+    /* Sets the font size of the button text. */
+    border-radius: 5px;
+    /* Rounds the corners of the buttons. */
+    border: 1px solid black;
+    /* Adds black border around buttons */
+    background-color: rgb(4, 156, 245);
+    /* Sets background color of buttons*/
+    display: flex;
+    /* Enables flexbox layout for buttons (for centering content). */
+    justify-content: space-evenly;
+    /* Distributes space between button's content */
+    align-items: center;
+    /* Vertically centers content within the buttons */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    /* Adds shadow properties */
+
+}
+
+/* Style for the active state of buttons (when clicked). */
+.btn:active {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    /* Slightly reduces shadow for a pressed effect. */
+    transform: translateY(2px);
+    /* Moves button down slightly on click */
+}
